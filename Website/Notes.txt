@@ -1,0 +1,40 @@
+HTML Script
+
+<div class="themeSwitch"></div>
+
+
+CSS Script
+
+/*Theme Switcher*/
+.themeSwitch
+{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background:whitesmoke;
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.themeSwitch::before
+{
+    content: '\f186';
+    font-family: fontAwesome;
+}
+.themeSwitch::after
+{
+    content: 'Light Theme';
+    position: absolute;
+    left: 40px;
+    font-size: 0.7em;
+    color: whitesmoke;
+    white-space: nowrap;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+}
